@@ -1,0 +1,11 @@
+---
+alwaysApply: true
+---
+---
+description: Global tech stack and guidelines
+globs: **/*
+---
+- Stack: Next.js (Frontend), Node.js/Express (Backend), Docker (Infra).
+- Always write TypeScript with strict type safety.
+- Write unit tests alongside every new feature.
+- Do not refactor existing working code unless explicitly requested in the spec.
