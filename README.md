@@ -36,6 +36,29 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
+## Use github Copilot inline Edit Using Local  ollama Model  
+
+
+```
+"twinny
+twinny - AI Code Completion and Chat"	"twinny - AI Code Completion and Chat
+https://github.com/twinnydotdev/twinny
+
+https://twinny.dev/
+
+https://marketplace.visualstudio.com/items?itemName=rjmacarthy.twinny"
+
+`twinny extenssion settings will ask to select the model, and we can select locally running ollama models`
+
+and then we need to map ctr+I in vs code to use twinny
+"Press Ctrl + K then Ctrl + S (or go to File > Preferences > Keyboard Shortcuts).
+in vs code to open  vs code kep mapping explorer"
+
+1. To Configure Twinny Shortcuts, Clear the search bar at the top and search for twinny. You will see:   Twinny: Inline Edit (twinny.inlineEdit): Double-click it and press Ctrl + I (or Ctrl + K).Twinny: Template Completion: For inline code suggestions as you type.
+
+```
+
+
 ## Running unit tests
 
 To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
@@ -51,24 +74,6 @@ For end-to-end (e2e) testing, run:
 ```bash
 ng e2e
 ```
-
-```
-"twinny
-twinny - AI Code Completion and Chat"	"twinny - AI Code Completion and Chat
-https://github.com/twinnydotdev/twinny
-
-https://twinny.dev/
-
-https://marketplace.visualstudio.com/items?itemName=rjmacarthy.twinny"
-
-and then we need to map ctr+I in vs code to use twinny
-"Press Ctrl + K then Ctrl + S (or go to File > Preferences > Keyboard Shortcuts).
-in vs code to open  vs code kep mapping explorer"
-
-1. To Configure Twinny Shortcuts, Clear the search bar at the top and search for twinny. You will see:   Twinny: Inline Edit (twinny.inlineEdit): Double-click it and press Ctrl + I (or Ctrl + K).Twinny: Template Completion: For inline code suggestions as you type.
-
-```
-
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
