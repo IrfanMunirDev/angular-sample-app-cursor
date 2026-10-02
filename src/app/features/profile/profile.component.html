@@ -1,0 +1,34 @@
+<section class="profile-page">
+  @if (loading) {
+    <mat-spinner diameter="40"></mat-spinner>
+  } @else if (errorMessage) {
+    <mat-card>
+      <mat-card-content>
+        <p class="profile-error" role="alert">{{ errorMessage }}</p>
+      </mat-card-content>
+    </mat-card>
+  } @else if (profile) {
+    <mat-card class="profile-card">
+      <mat-card-header>
+        <mat-card-title>{{ profile.fullName }}</mat-card-title>
+        <mat-card-subtitle>{{ profile.companyName }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <dl class="profile-fields">
+          <dt>Status</dt>
+          <dd>{{ profile.status }}</dd>
+          <dt>Phone</dt>
+          <dd>{{ profile.phone }}</dd>
+          <dt>Street</dt>
+          <dd>{{ profile.address.street }}</dd>
+          <dt>City</dt>
+          <dd>{{ profile.address.city }}</dd>
+          <dt>Country</dt>
+          <dd>{{ profile.address.country }}</dd>
+          <dt>ZIP</dt>
+          <dd>{{ profile.address.zipCode }}</dd>
+        </dl>
+      </mat-card-content>
+    </mat-card>
+  }
+</section>

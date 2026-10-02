@@ -1,0 +1,31 @@
+.profile-page {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px 24px;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 560px;
+}
+
+.profile-fields {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 8px 16px;
+  margin: 16px 0 0;
+}
+
+.profile-fields dt {
+  font-weight: 500;
+}
+
+.profile-fields dd {
+  margin: 0;
+}
+
+.profile-error {
+  color: #b3261e;
+  margin: 0;
+}
